@@ -46,8 +46,8 @@ class MoneyTransferTest {
         Assertions.assertEquals(cardBalance0001, dashboardPage.getCardBalance(DataHelper.getCardInfo0001()));
     }
 
-    /*@Test
-    void shouldTransferSumOverLimit() {
+    @Test
+    void shouldTransferSumOverLimitWithError() {
         open("http://localhost:9999");
         Configuration.holdBrowserOpen = true;
         var loginPage = new LoginPage();
@@ -63,7 +63,7 @@ class MoneyTransferTest {
         transferMoneyPage.Error();
         Assertions.assertEquals(cardBalance0002, dashboardPage.getCardBalance(DataHelper.getCardInfo0002()));
         Assertions.assertEquals(cardBalance0001, dashboardPage.getCardBalance(DataHelper.getCardInfo0001()));
-    }*/
+    }
 
 }
 
